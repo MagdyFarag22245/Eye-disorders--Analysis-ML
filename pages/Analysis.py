@@ -5,7 +5,7 @@ import streamlit as st
 import Meda as md
 import sys
 # Directing to MEDA file path to be able to read it
-sys.path.append("C:\Users\DELL\Documents\GitHub\Eye-disorders--Analysis-ML\Meda.py") # Path of MEDA file
+sys.path.append(r"C:\Users\DELL\Documents\GitHub\Eye-disorders--Analysis-ML\Meda.py") # Path of MEDA file
 
 # Dividing our analysis into tabs, each tab contains information in one dimension and many facts.
 tab_over_view,tab_prevalence,tab_category = st.tabs(['OverView','Prevalence','Category'])
