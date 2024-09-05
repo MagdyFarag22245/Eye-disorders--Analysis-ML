@@ -8,7 +8,7 @@ import seaborn as sns
 from sklearn.cluster import KMeans
 
 # Importing the dataset
-df = pd.read_csv(r'https://github.com/MagdyFarag22245/Eye-disorders--Analysis-ML/blob/main/sources/Eye-disorders-prevalence.csv')
+df = pd.read_csv(r'./sources/Eye-disorders-prevalence.csv')
 
 # Analysis:-
 
