@@ -6,8 +6,8 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 
-st.markdown("<h1 style='text-align: center;'>Disease category Prediction</h1>", unsafe_allow_html=True)
-st.write("This page is dedicated to predict the Disease category, using a GradientBoostingClassifier model traind and tested over our dataset. The model is making an accuracy of 98.3%  over the test set. ")
+st.markdown("<h1 style='text-align: center;'>Prevalence Prediction</h1>", unsafe_allow_html=True)
+st.write("This page is dedicated to predict the prevalence , using a ElasticNet model traind and tested over our dataset. The model is making an accuracy of 97.4%  over the test set. ")
 st.write("Enter the required data accurately for providing an accurate prediction. ")
 
 st.markdown("<h5> INPUT DATA FOR CATEGORY PREDICTION</h5>", unsafe_allow_html=True)
