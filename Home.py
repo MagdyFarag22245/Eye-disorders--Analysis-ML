@@ -16,7 +16,7 @@ def load_image(image_path):
     return encoded_image
 
 # Load the image from the path
-image_path = "D:/Study/Epsilon DS/Eye-Project/sources/eye_gif.gif"
+image_path = "https://github.com/MagdyFarag22245/Eye-disorders--Analysis-ML/blob/main/sources/eye_gif.gif"
 encoded_image = load_image(image_path)
 
 # Centering the image using HTML with st.markdown
