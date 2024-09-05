@@ -16,7 +16,7 @@ def load_image(image_path):
     return encoded_image
 
 # Load the image from the path
-image_path = "https://github.com/MagdyFarag22245/Eye-disorders--Analysis-ML/blob/main/sources/eye_gif.gif"
+image_path = "./sources/eye_gif.gif"
 encoded_image = load_image(image_path)
 
 # Centering the image using HTML with st.markdown
@@ -30,31 +30,4 @@ st.markdown(
 )
 
 
-# Function to load and encode the image
-# import base64
-
-# # Function to load and encode the image
-# def load_image(image_path):
-#     with open(image_path, "rb") as image_file:
-#         encoded_image = base64.b64encode(image_file.read()).decode()
-#     return encoded_image
-
-# # Load the image from the path
-# image_path = "D:/Study/Epsilon DS/Eye-Project/sources/eye_gif.gif"
-# encoded_image = load_image(image_path)
-
-# # Centering the images side-by-side using HTML with st.markdown
-# st.markdown(
-#     f"""
-#     <div style='display: flex; justify-content: center;'>
-#         <div style='flex: 1; display: flex; justify-content: center;'>
-#             <img src='data:image/gif;base64,{encoded_image}' style='width:60%; height:auto;'/>
-#         </div>
-#         <div style='flex: 1; display: flex; justify-content: center;'>
-#             <img src='data:image/gif;base64,{encoded_image}' style='width:60%; height:auto;'/>
-#         </div>
-#     </div>
-#     """,
-#     unsafe_allow_html=True
-# )
 
