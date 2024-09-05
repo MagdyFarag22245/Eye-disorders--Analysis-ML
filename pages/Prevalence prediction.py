@@ -116,7 +116,7 @@ input_data = pd.DataFrame({
 
 st.markdown("<h5> CLICK TO PREDICT</h5>", unsafe_allow_html=True)
 # Load the saved pipeline
-with open(r"D:\Study\Epsilon DS\Eye-Project\sources\best_model_2.pkl", 'rb') as file:
+with open(r"https://github.com/MagdyFarag22245/Eye-disorders--Analysis-ML/blob/main/sources/best_model_2.pkl", 'rb') as file:
     model_pipeline = joblib.load(file)
 
 
