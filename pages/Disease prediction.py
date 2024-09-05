@@ -109,7 +109,7 @@ st.markdown("<h5> CLICK TO PREDICT</h5>", unsafe_allow_html=True)
 
 # Load the saved pipeline
 # Path to your ZIP file
-zip_file_path = r"https://github.com/MagdyFarag22245/Eye-disorders--Analysis-ML/blob/main/sources/best_model.zip"
+zip_file_path = r"./sources/best_model.zip"
 
 # Open the ZIP file and read the .pkl file directly
 with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
