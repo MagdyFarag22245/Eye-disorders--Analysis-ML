@@ -96,8 +96,8 @@ with col2:
     gender = st.selectbox('Select your sex',['Male','Female','All genders'])
     low_confidence_limit = st.number_input('Enter the low_confidence_limit',min_value=0.0, max_value=12.17)
     high_confidence_limit = st.number_input('Enter the high_confidence_limit',min_value=0.0, max_value=36.44)
-    numerator = st.number_input('Enter the numerator',min_value=0.0, max_value=18.75)
-    sample_size = st.number_input('Enter the sample_size',min_value=0.0, max_value=18.75)    
+    numerator = st.number_input('Enter the numerator',min_value=0.0)
+    sample_size = st.number_input('Enter the sample_size',min_value=0.0)    
 
 
 input_data = pd.DataFrame({
