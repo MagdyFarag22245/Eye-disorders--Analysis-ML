@@ -85,8 +85,8 @@ with col2:
     low_confidence_limit = st.number_input('Enter the low_confidence_limit',min_value=0.0, max_value=12.17)
     high_confidence_limit = st.number_input('Enter the high_confidence_limit',min_value=0.0, max_value=36.44)
     data_value = st.number_input('Enter the data_value(%)',min_value=0.0, max_value=18.75)
-    numerator = st.number_input('Enter the numerator',min_value=0.0, max_value=18.75)
-    sample_size = st.number_input('Enter the sample_size',min_value=0.0, max_value=18.75)
+    numerator = st.number_input('Enter the numerator',min_value=0.0)
+    sample_size = st.number_input('Enter the sample_size',min_value=0.0)
 
 
 
