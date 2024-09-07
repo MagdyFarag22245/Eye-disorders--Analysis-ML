@@ -6,8 +6,8 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 
-st.markdown("<h1 style='text-align: center;'>Disease category Prediction</h1>", unsafe_allow_html=True)
-st.write("This page is dedicated to predict the Disease category, using a GradientBoostingClassifier model traind and tested over our dataset. The model is making an accuracy of 98.3%  over the test set. ")
+st.markdown("<h1 style='text-align: center;'>Prevalence Prediction</h1>", unsafe_allow_html=True)
+st.write("This page is dedicated to predict the prevalence , using a ElasticNet model traind and tested over our dataset. The model is making an accuracy of 97.4%  over the test set. ")
 st.write("Enter the required data accurately for providing an accurate prediction. ")
 
 st.markdown("<h5> INPUT DATA FOR CATEGORY PREDICTION</h5>", unsafe_allow_html=True)
@@ -96,8 +96,8 @@ with col2:
     gender = st.selectbox('Select your sex',['Male','Female','All genders'])
     low_confidence_limit = st.number_input('Enter the low_confidence_limit',min_value=0.0, max_value=12.17)
     high_confidence_limit = st.number_input('Enter the high_confidence_limit',min_value=0.0, max_value=36.44)
-    numerator = st.number_input('Enter the numerator',min_value=0.0, max_value=18.75)
-    sample_size = st.number_input('Enter the sample_size',min_value=0.0, max_value=18.75)    
+    numerator = st.number_input('Enter the numerator',min_value=0.0)
+    sample_size = st.number_input('Enter the sample_size',min_value=0.0)    
 
 
 input_data = pd.DataFrame({
@@ -116,7 +116,7 @@ input_data = pd.DataFrame({
 
 st.markdown("<h5> CLICK TO PREDICT</h5>", unsafe_allow_html=True)
 # Load the saved pipeline
-with open(r"D:\Study\Epsilon DS\Eye-Project\sources\best_model_2.pkl", 'rb') as file:
+with open(r"./sources/best_model_2.pkl", 'rb') as file:
     model_pipeline = joblib.load(file)
 
 

@@ -85,8 +85,8 @@ with col2:
     low_confidence_limit = st.number_input('Enter the low_confidence_limit',min_value=0.0, max_value=12.17)
     high_confidence_limit = st.number_input('Enter the high_confidence_limit',min_value=0.0, max_value=36.44)
     data_value = st.number_input('Enter the data_value(%)',min_value=0.0, max_value=18.75)
-    numerator = st.number_input('Enter the numerator',min_value=0.0, max_value=18.75)
-    sample_size = st.number_input('Enter the sample_size',min_value=0.0, max_value=18.75)
+    numerator = st.number_input('Enter the numerator',min_value=0.0)
+    sample_size = st.number_input('Enter the sample_size',min_value=0.0)
 
 
 
@@ -109,7 +109,7 @@ st.markdown("<h5> CLICK TO PREDICT</h5>", unsafe_allow_html=True)
 
 # Load the saved pipeline
 # Path to your ZIP file
-zip_file_path = r"D:\Study\Epsilon DS\Eye-Project\sources\best_model.zip"
+zip_file_path = r"./sources/best_model.zip"
 
 # Open the ZIP file and read the .pkl file directly
 with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
